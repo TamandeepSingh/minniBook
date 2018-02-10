@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/tamandeepsingh/Documents/MyOwnProj/minniBook/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/tamandeepsingh/Documents/MyOwnProj/minniBook/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/tamandeepsingh/Documents/MyOwnProj/git/minniBook/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/tamandeepsingh/Documents/MyOwnProj/git/minniBook/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    }
+]

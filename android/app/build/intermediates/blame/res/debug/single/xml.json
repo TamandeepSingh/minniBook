@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/tamandeepsingh/Documents/MyOwnProj/minniBook/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/tamandeepsingh/Documents/MyOwnProj/minniBook/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.53.0/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/tamandeepsingh/Documents/MyOwnProj/git/minniBook/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/tamandeepsingh/Documents/MyOwnProj/git/minniBook/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.53.0/res/xml/preferences.xml"
+    }
+]
