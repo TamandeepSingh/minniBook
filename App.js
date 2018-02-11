@@ -28,7 +28,7 @@ export default class App extends Component<Props> {
           Welcome to Minni Book
         </Text>
         <Text style={styles.instructions}>
-          Your personal Scrapbook ;)
+          Your personal Scrapbook!!
         </Text>
       </View>
     );
