@@ -22,16 +22,13 @@ import com.facebook.react.uimanager.IllegalViewOperationException;
 
   @Override
   Animation createAnimationImpl(View view, int x, int y, int width, int height) {
+    float fromValue = isReverse() ? 1.0f : 0.0f;
+    float toValue = isReverse() ? 0.0f : 1.0f;
     if (mAnimatedProperty != null) {
       switch (mAnimatedProperty) {
-        case OPACITY: {
-          float fromValue = isReverse() ? view.getAlpha() : 0.0f;
-          float toValue = isReverse() ? 0.0f : view.getAlpha();
+        case OPACITY:
           return new OpacityAnimation(view, fromValue, toValue);
-        }
-        case SCALE_XY: {
-          float fromValue = isReverse() ? 1.0f : 0.0f;
-          float toValue = isReverse() ? 0.0f : 1.0f;
+        case SCALE_XY:
           return new ScaleAnimation(
               fromValue,
               toValue,
@@ -41,7 +38,6 @@ import com.facebook.react.uimanager.IllegalViewOperationException;
               .5f,
               Animation.RELATIVE_TO_SELF,
               .5f);
-        }
         default:
           throw new IllegalViewOperationException(
               "Missing animation for property : " + mAnimatedProperty);

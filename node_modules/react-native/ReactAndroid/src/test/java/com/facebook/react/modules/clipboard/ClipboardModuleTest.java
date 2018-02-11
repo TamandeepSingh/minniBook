@@ -39,7 +39,7 @@ public class ClipboardModuleTest {
 
   @Before
   public void setUp() {
-    mClipboardModule = new ClipboardModule(RuntimeEnvironment.application);
+    mClipboardModule = new ClipboardModule(ReactTestHelper.createCatalystContextForTest());
     mClipboardManager =
         (ClipboardManager) RuntimeEnvironment.application.getSystemService(Context.CLIPBOARD_SERVICE);
   }

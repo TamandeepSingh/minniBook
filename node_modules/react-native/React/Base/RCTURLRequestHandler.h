@@ -29,7 +29,6 @@
  * itself. This will be used later to refer to the request in callbacks. The
  * `sendRequest:withDelegate:` method *must* return before calling any of the
  * delegate methods, or the delegate won't recognize the token.
- * Following common Objective-C pattern, `delegate` will not be retained.
  */
 - (id)sendRequest:(NSURLRequest *)request
      withDelegate:(id<RCTURLRequestDelegate>)delegate;
