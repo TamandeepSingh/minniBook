@@ -1,11 +1,12 @@
 // Copyright 2004-present Facebook. All Rights Reserved.
 
-#pragma once
+#ifndef FBSAMPLEXPLATMODULE
+#define FBSAMPLEXPLATMODULE
+
+#include <cxxreact/CxxModule.h>
 
 #include <memory>
 #include <vector>
-
-#include <cxxreact/CxxModule.h>
 
 namespace facebook { namespace xplat { namespace samples {
 
@@ -47,4 +48,5 @@ private:
 
 }}}
 
-extern "C" facebook::xplat::module::CxxModule *SampleCxxModule();
+#endif
+

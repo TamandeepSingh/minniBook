@@ -13,33 +13,21 @@ namespace react {
  * This is a convenience class to avoid lots of verbose profiling
  * #ifdefs.  If WITH_FBSYSTRACE is not defined, the optimizer will
  * remove this completely.  If it is defined, it will behave as
- * FbSystraceSection, with the right tag provided. Use two separate classes to
- * to ensure that the ODR rule isn't violated, that is, if WITH_FBSYSTRACE has
- * different values in different files, there is no inconsistency in the sizes
- * of defined symbols.
+ * FbSystraceSection, with the right tag provided.
  */
-#ifdef WITH_FBSYSTRACE
-struct ConcreteSystraceSection {
+struct SystraceSection {
 public:
   template<typename... ConvertsToStringPiece>
-  explicit
-  ConcreteSystraceSection(const char* name, ConvertsToStringPiece&&... args)
+  explicit SystraceSection(const char* name, ConvertsToStringPiece&&... args)
+#ifdef WITH_FBSYSTRACE
     : m_section(TRACE_TAG_REACT_CXX_BRIDGE, name, args...)
+#endif
   {}
 
 private:
+#ifdef WITH_FBSYSTRACE
   fbsystrace::FbSystraceSection m_section;
-};
-using SystraceSection = ConcreteSystraceSection;
-#else
-struct DummySystraceSection {
-public:
-  template<typename... ConvertsToStringPiece>
-  explicit
-  DummySystraceSection(const char* name, ConvertsToStringPiece&&... args)
-    {}
-};
-using SystraceSection = DummySystraceSection;
 #endif
+};
 
 }}
