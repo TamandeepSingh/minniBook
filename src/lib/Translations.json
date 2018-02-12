@@ -12,7 +12,7 @@
       "subview": "子视图",
       "back": "返回"
     },
-    "Snowflake": {
+    "Mybook": {
       "logout": "注销",
       "main": "主页",
       "profile":"个人信息"
@@ -68,7 +68,7 @@
       "subview": "Subview",
       "back": "Back"
     },
-    "Snowflake": {
+    "Mybook": {
       "logout": "Log out",
       "main": "Main",
       "profile":"Profile"
@@ -118,13 +118,13 @@
     "Header": {
       "current_state": "état actuel",
       "see_console": "voir console",
-      "update_state": "état de mise à jour"      
-    },    
+      "update_state": "état de mise à jour"
+    },
     "Subview": {
       "subview": "Sous-vue",
       "back": "Arrière"
-    },    
-    "Snowflake": {
+    },
+    "Mybook": {
       "logout": "Se déconnecter",
       "main": "Principal",
       "profile":"Profil"
@@ -137,7 +137,7 @@
       "email": "Email",
       "update": "Mettre à jour le profil",
       "verified": "Email verifié",
-      "display": "afficher seulement"      
+      "display": "afficher seulement"
     },
     "LoginForm": {
       "username": "Nom d'utilisateur",
@@ -149,7 +149,7 @@
       "forgot_password": "Mot de passe oublié?",
       "already_have_account": "Vous avez déjà compte?",
       "register": "Registre",
-      "show_password": "Montrer le mot de passe"      
+      "show_password": "Montrer le mot de passe"
     },
     "ForgotPassword": {
       "reset_password": "Réinitialiser le mot de passe"
@@ -165,7 +165,7 @@
       "valid_email": "Fournir email valide",
       "valid_password": "6-12 en longueur, avec un nombre et un caractère spécial: !@#$%^&*",
       "valid_password_again": "les mots de passe doivent correspondre"
-    }    
+    }
   },
   "es": {
     "App": {
@@ -174,13 +174,13 @@
     "Header": {
       "current_state": "Estado actual",
       "see_console": "ver la consola",
-      "update_state": "Estado de actualización"      
-    },    
+      "update_state": "Estado de actualización"
+    },
     "Subview": {
       "subview": "Subview",
       "back": "Regresar"
-    },    
-    "Snowflake": {
+    },
+    "Mybook": {
       "logout": "Cerrar sesión",
       "main": "Principal",
       "profile":"Perfil"
@@ -205,7 +205,7 @@
       "forgot_password": "¿Olvidaste tu contraseña?",
       "already_have_account": "¿Ya tienes cuenta?",
       "register": "Registrarse",
-      "show_password": "Mostrar Contraseña"      
+      "show_password": "Mostrar Contraseña"
     },
     "ForgotPassword": {
       "reset_password": "Restablecer la contraseña"
@@ -221,8 +221,7 @@
       "valid_email": "Proveer de correo electrónico válida",
       "valid_password": "6-12 de longitud, con un número y carácter especial: !@#$%^&*",
       "valid_password_again": "Las contraseñas deben coincidir"
-    }    
+    }
   }
 
 }
-
