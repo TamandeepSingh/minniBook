@@ -49,10 +49,15 @@ var styles = StyleSheet.create({
     marginTop: 10
   },
   header: {
-    marginTop: 20,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'transparent'
+    backgroundColor: '#1d4063',
+    height: 56,
+  },
+  headText:{
+    fontSize:23,
+    fontFamily:'Roboto',
+    color:'#ebf5ff'
   },
   mark: {
     height: 100,
@@ -143,10 +148,8 @@ var Header = React.createClass({
         <View style={styles.header}>
 
           <TouchableHighlight onPress={this._onPressMark}>
+            <Text style={styles.headText} >My MinniBook</Text>
 
-            <Image style={styles.mark}
-              source={require('../images/Snowflake.png')}
-            />
           </TouchableHighlight>
           {this.props.isFetching
            ? <ActivityIndicator animating size='large' />
