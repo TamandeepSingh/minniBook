@@ -92,14 +92,14 @@ var LoginForm = React.createClass({
       error: this.props.form.fields.passwordErrorMsg
     }
 
-    /*let passwordAgain = {
+    let passwordAgain = {
       label: I18n.t('LoginForm.password_again'),
       secureTextEntry: secureTextEntry,
       maxLength: 12,
       editable: !this.props.form.isFetching,
       hasError: this.props.form.fields.passwordAgainHasError,
       error: this.props.form.fields.passwordAgainErrorMsg
-    }*/
+    }
 
     let loginForm
     switch (formType) {
@@ -112,7 +112,7 @@ var LoginForm = React.createClass({
           username: t.String,
           email: t.String,
           password: t.String,
-          //passwordAgain: t.String
+          passwordAgain: t.String
         })
         options.fields['username'] = username
         options.fields['username'].placeholder = I18n.t('LoginForm.username')
@@ -122,8 +122,8 @@ var LoginForm = React.createClass({
         options.fields['email'].autoCapitalize = 'none'
         options.fields['password'] = password
         options.fields['password'].placeholder = I18n.t('LoginForm.password')
-//        options.fields['passwordAgain'] = passwordAgain
-//      options.fields['passwordAgain'].placeholder = I18n.t('LoginForm.password_again')
+        options.fields['passwordAgain'] = passwordAgain
+        options.fields['passwordAgain'].placeholder = I18n.t('LoginForm.password_again')
         break
 
       /**

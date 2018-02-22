@@ -1,1 +1,1 @@
-# minniBook
+# MinniBook

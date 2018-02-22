@@ -8,14 +8,14 @@ module.exports = {
   },
   HAPI: {
     local: {
-      url: 'http://localhost:5000'
+      url: 'http://192.168.178.21:5000'
     },
     remote: {
       url: 'https://snowflakeserver-bartonhammond.rhcloud.com/'
     }
   },
   PARSE: {
-    appId: 'minniBook',                              // match APP_ID in parse-server's index.js
+    appId: 'snowflake',                              // match APP_ID in parse-server's index.js
     local: {
       url: 'http://localhost:1337/parse'             // match SERVER_URL in parse-server's index.js
     },

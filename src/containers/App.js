@@ -98,7 +98,13 @@ let App = React.createClass({
      *
      */
   componentDidMount () {
-    this.props.actions.getSessionToken()
+        // Use a timer so App screen is displayed
+    this.setTimeout(
+            () => {
+              this.props.actions.getSessionToken()
+            },
+            2500
+        )
   },
 
   render () {
@@ -110,7 +116,7 @@ let App = React.createClass({
           onGetState={this.props.actions.getState}
           onSetState={this.props.actions.setState} />
 
-        <Text style={styles.summary}>MinniBook{I18n.t('App.version')}:{this.props.deviceVersion}</Text>
+        <Text style={styles.summary}>Snowflake {I18n.t('App.version')}:{this.props.deviceVersion}</Text>
 
       </View>
     )
