@@ -1,8 +1,8 @@
 module.exports = {
   SESSION_TOKEN_KEY: 'SESSION_TOKEN_KEY',
   backend: {
-    hapiRemote: false,
-    hapiLocal: true,
+    hapiRemote: true,
+    hapiLocal: false,
     parseRemote: false,
     parseLocal: false
   },
@@ -11,7 +11,7 @@ module.exports = {
       url: 'http://192.168.178.21:5000'
     },
     remote: {
-      url: 'https://snowflakeserver-bartonhammond.rhcloud.com/'
+      url: 'http://159.89.42.196:46551'
     }
   },
   PARSE: {
