@@ -83,8 +83,8 @@ var styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   button: {
-    backgroundColor: '#1d4063',
-    borderColor: '#1d4063',
+    backgroundColor: '#FF3366',
+    borderColor: '#FF3366',
     marginLeft: 10,
     marginRight: 10
   }
@@ -117,7 +117,7 @@ class Main extends Component {
             currentState={this.props.global.currentState}
             onGetState={this.props.actions.getState}
             onSetState={this.props.actions.setState} />
-          <Text>I am in the main file.</Text>
+
           <Button style={styles.button} onPress={this.handlePress.bind(this)}>
             {I18n.t('Main.navigate')}
           </Button>

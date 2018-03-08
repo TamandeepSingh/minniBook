@@ -1,7 +1,7 @@
 'use strict'
 /**
- *  # Mybook
- *  Mybook ![Mybook](https://cloud.githubusercontent.com/assets/1282364/11599365/1a1c39d2-9a8c-11e5-8819-bc1e48b30525.png)
+ *  # snowflake
+ *  Snowflake ![snowflake](https://cloud.githubusercontent.com/assets/1282364/11599365/1a1c39d2-9a8c-11e5-8819-bc1e48b30525.png)
  */
 
 /**
@@ -88,7 +88,7 @@ import {setStore} from './reducers/global/globalActions'
 
 /**
  * ## States
- * Mybook explicitly defines initial state
+ * Snowflake explicitly defines initial state
  *
  */
 import AuthInitialState from './reducers/auth/authInitialState'
@@ -105,7 +105,7 @@ var VERSION = pack.version
 /**
  *
  * ## Initial state
- * Create instances for the keys of each structure in Mybook
+ * Create instances for the keys of each structure in snowflake
  * @returns {Object} object with 4 keys
  */
 function getInitialState () {
@@ -151,11 +151,11 @@ class TabIcon extends React.Component {
  */
 
 export default function native (platform) {
-  let Mybook = React.createClass({
+  let Snowflake = React.createClass({
     render () {
       const store = configureStore(getInitialState())
 
-            // configureStore will combine reducers from Mybook and main application
+            // configureStore will combine reducers from snowflake and main application
             // it will then create the store based on aggregate state from all reducers
       store.dispatch(setPlatform(platform))
       store.dispatch(setVersion(VERSION))
@@ -199,14 +199,14 @@ export default function native (platform) {
                 default='Main'>
 
                 <Scene key='Logout'
-                  title={I18n.t('Mybook.logout')}
+                  title={I18n.t('Snowflake.logout')}
                   icon={TabIcon}
                   iconName={'sign-out'}
                   hideNavBar
                   component={Logout} />
 
                 <Scene key='Main'
-                  title={I18n.t('Mybook.main')}
+                  title={I18n.t('Snowflake.main')}
                   iconName={'home'}
                   icon={TabIcon}
                   hideNavBar
@@ -214,7 +214,7 @@ export default function native (platform) {
                   initial />
 
                 <Scene key='Profile'
-                  title={I18n.t('Mybook.profile')}
+                  title={I18n.t('Snowflake.profile')}
                   icon={TabIcon}
                   iconName={'gear'}
                   hideNavBar
@@ -230,5 +230,5 @@ export default function native (platform) {
      * registerComponent to the AppRegistery and off we go....
      */
 
-  AppRegistry.registerComponent('minniBook', () => Mybook)
+  AppRegistry.registerComponent('minnibook', () => Snowflake)
 }

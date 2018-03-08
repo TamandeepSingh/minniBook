@@ -227,7 +227,7 @@ class LoginRender extends Component {
     let self = this
 
     // display the login / register / change password screens
-    //this.errorAlert.checkError(this.props.auth.form.error)
+    this.errorAlert.checkError(this.props.auth.form.error)
 
     /**
      * Toggle the display of the Password and PasswordAgain fields

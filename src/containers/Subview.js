@@ -106,7 +106,6 @@ let Subview = React.createClass({
           title={titleConfig}
           leftButton={leftButtonConfig} />
         <View style={styles.container}>
-          <Text>I am in sub view.</Text>
           <Text style={styles.summary}>{I18n.t('Subview.subview')} {I18n.t('App.version')}: {this.props.deviceVersion}
           </Text>
         </View>

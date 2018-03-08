@@ -13,7 +13,7 @@
 * ## Imports
 *
 */
-//import SimpleAlert from 'react-native-simpledialog-android'
+import SimpleAlert from 'react-native-simpledialog-android'
 import _ from 'underscore'
 
 var ErrorAlert = class ErrorAlertClass {
@@ -25,7 +25,7 @@ var ErrorAlert = class ErrorAlertClass {
    * ### checkErro
    * determine if there is an error and how deep it is.  Take the
    * deepest level as the message and display it
-
+   */
   checkError (obj) {
     let errorMessage = ''
     if (!_.isNull(obj)) {
@@ -46,7 +46,7 @@ var ErrorAlert = class ErrorAlertClass {
         }
       }
     }// isNull
-  }*/
+  }
 }
 
 module.exports = ErrorAlert
